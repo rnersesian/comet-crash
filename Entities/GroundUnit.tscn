@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://dnwprndoskdkt"]
+
+[ext_resource type="Script" path="res://Scripts/GroundUnit.gd" id="1_g8tg4"]
+[ext_resource type="Script" path="res://CustomResources/UnitInfo.gd" id="2_jq2u1"]
+[ext_resource type="Texture2D" uid="uid://u1kgr2u3j0vg" path="res://Images/GroundUnit.png" id="3_pjxcj"]
+
+[sub_resource type="Resource" id="Resource_6fqf5"]
+script = ExtResource("2_jq2u1")
+max_health = 200
+speed = 150.0
+kill_value = 0
+damage = 0
+
+[node name="GroundUnit" type="Node2D"]
+script = ExtResource("1_g8tg4")
+unit_info = SubResource("Resource_6fqf5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("3_pjxcj")
