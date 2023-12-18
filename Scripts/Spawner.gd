@@ -18,5 +18,4 @@ func _process(delta):
 	if (cooldown <= 0):
 		var machin = truc.instantiate()
 		add_child(machin)
-		print("spawn !")
 		cooldown = spawn_cooldown
